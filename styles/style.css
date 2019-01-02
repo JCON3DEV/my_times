@@ -25,8 +25,10 @@ body {
   color: MediumAquamarine;
   display: flex;
   justify-content: flex-start;
-
+  flex-grow: 4;
+  border: 2px solid MediumAquamarine;
 }
+
 .logo img {
   margin-right: 10px;
 }
@@ -34,7 +36,7 @@ body {
 .header .nav {
   display: flex;
   justify-content: flex-end;
-  margin: 0 5px;
+  margin: 0 10px;
   text-decoration: underline;
 }
 
@@ -43,4 +45,56 @@ body {
   display: flex;
   border-left: 2px solid MediumAquamarine;
   padding-left: 5px;
+  width: inherit;
+  flex-grow: 5;
+}
+
+/*main content*/
+
+.content {
+  display: inline-flex;
+  position: relative;
+  top: 60px;
+  height: 800px;
+  width: 1200px;
+  flex-direction: row;
+  justify-content: center;
+  border: 5px solid black;
+}
+
+/* large column */
+.large{
+  width: 630px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.large h2,
+.medium h2 {
+  font-weight: bold;
+}
+
+
+.large h3 {
+  border: 1px solid black;
+}
+
+/*medioum column*/
+
+.medium {
+  width: 400px;
+  border: 1px solid grey;
+  border: flex;
+  flex-direction: column;
+}
+
+/*Small Column*/
+
+.small {
+  width: 240px;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
 }
