@@ -1,0 +1,46 @@
+style.css
+
+* {
+  margin: 0;
+  border: 0;
+}
+
+
+body {
+  background-color: red;
+}
+
+.header {
+  display: inline-flex;
+  position: fixed;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+}
+
+.header .logo {
+  color: MediumAquamarine;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.logo img {
+  margin-right: 10px;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 5px;
+  text-decoration: underline;
+}
+
+.header p {
+  color: MediumAquamarine;
+  display: flex;
+  border-left: 2px solid MediumAquamarine;
+  padding-left: 5px;
+}
