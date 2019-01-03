@@ -3,20 +3,25 @@ style.css
 * {
   margin: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 
 body {
-  background-color: red;
+  background-color: Azure; /*for debugging*/
+  display: flex;
 }
 
 .header {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   position: fixed;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  width: 100%;
+  background-color: red; /*for debugging*/
+  margin: 0 10;
   border-bottom: 1px solid black;
   justify-content: space-between;
 }
@@ -26,7 +31,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-grow: 4;
-  border: 2px solid MediumAquamarine;
+  border: 1px solid black;
 }
 
 .logo img {
@@ -36,7 +41,8 @@ body {
 .header .nav {
   display: flex;
   justify-content: flex-end;
-  margin: 0 10px;
+  margin: 0 10;
+  align-items: center;
   text-decoration: underline;
 }
 
@@ -52,8 +58,9 @@ body {
 /*main content*/
 
 .content {
-  display: inline-flex;
+  display: flex;
   position: relative;
+  justify-content: center;
   top: 60px;
   height: 800px;
   width: 1200px;
@@ -68,6 +75,7 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  background-color: pink; /*for debugging*/
 }
 
 
@@ -88,6 +96,7 @@ body {
   border: 1px solid grey;
   border: flex;
   flex-direction: column;
+  background-color: green; /*for debugging*/
 }
 
 /*Small Column*/
@@ -97,4 +106,5 @@ body {
   border: 1px solid blue;
   display: flex;
   flex-direction: column;
+  background-color: blue; /*for debugging*/
 }
