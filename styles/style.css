@@ -26,6 +26,7 @@ body {
   margin: 0 10;
   border-bottom: 1px solid black;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 .header .logo {
@@ -34,11 +35,16 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   flex-grow: 4;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.header .logo p {
+  align-items: center;
 }
 
 .logo img {
   margin-right: 10px;
+  align-items: stretch;
 }
 
 .header .nav {
@@ -46,6 +52,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   text-decoration: underline;
+  margin-right: 20px;
 }
 
 .header p {
@@ -62,16 +69,16 @@ body {
 .content {
   display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: space-between;
   top: 60px;
-  height: 1000px;
-  width: 1200px;
+  width: 100%;
   flex-direction: row;
   justify-content: center;
   border: 5px solid black;
   font-family: Georgia;
   font-size: 17px;
   color: black;
+  padding: 5px;
 }
 
 /* large column */
@@ -81,6 +88,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: pink; /*for debugging*/
+  margin: 0 10;
 }
 
 
@@ -88,7 +96,6 @@ body {
 .medium h2 {
   font-weight: bold;
 }
-
 
 .large h3 {
   border: 1px solid black;
@@ -105,21 +112,30 @@ body {
   color: white;
 }
 
+.orca {
+  border: 2px solid black;
+}
+
 .orca h3 {
   display: flex;
   background-image: url(./images/img-story-2.png);
   height: 400px;
   width: 400px;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   font-weight: bold;
   font-size: 30px;
   color: white;
+}
+
+.burger {
+  border: 2px solid black;
 }
 
 .burger h3 {
   display: flex;
   background-image: url(./images/img-story-3.png);
+  align-items: center;
   height: 400px;
   width: 400px;
   font-weight: bold;
@@ -127,40 +143,51 @@ body {
   color: white;
 }
 
-
 /*edit this - currently not working + rename */
 .jordan {
   display:flex;
+  overflow: scroll;
   flex-direction: column;
   flex-wrap:wrap;
   background-color: gold;
 }
 
+
 /*medioum column*/
 
 .medium {
-  width: 400px;
+  max-width:300px;
   border: 1px solid grey;
   border: flex;
+  margin: 10px;
   flex-direction: column;
   background-color: green; /*for debugging*/
+}
+
+.cats {
+  border: 2px solid black;
 }
 
 .cats h3 {
   display: flex;
   background-image: url(./images/img-story-1.png);
-  height: 400px;
-  width: 400px;
+  height: 300px;
   font-weight: bold;
   font-size: 30px;
   color: white;
 }
 
+h3 {
+  align-items: center;
+}
+
+
 /*Small Column*/
 
 .small {
   width: 240px;
-  border: 1px solid blue;
+  border: 3px solid black;
+  margin: 0 10 0 10;
   display: flex;
   flex-direction: column;
   background-color: blue; /*for debugging*/
@@ -176,6 +203,7 @@ h4 {
   justify-content: flex-start;
   align-items: stretch;
   background-color: grey;
+  border: 2px solid black;
 
 }
 
