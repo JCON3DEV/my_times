@@ -102,7 +102,7 @@ body {
 }
 
 .tuna h3 {
-  display: flex;
+  display: inline-flex;
   background-image: url(./images/img-story-main.png);
   height: 160px;
   align-content: center;
@@ -114,13 +114,19 @@ body {
 
 .orca {
   border: 2px solid black;
+  flex-grow: 1;
+  min-width: 100px;
+  flex-basis: 0px;
 }
 
 .orca h3 {
-  display: flex;
+  display: inline-flex;
+  flex-grow: 1;
+  min-width: 100px;
+  flex-basis: 0px;
   background-image: url(./images/img-story-2.png);
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   justify-content: center;
   align-items: center;
   font-weight: bold;
@@ -130,14 +136,21 @@ body {
 
 .burger {
   border: 2px solid black;
+  flex-grow: 1;
+  min-width: 100px;
+  flex-basis: 0px;
 }
 
 .burger h3 {
-  display: flex;
+  display: inline-flex;
+  flex-grow: 1;
+  min-width: 100px;
+  flex-basis: 0px;
   background-image: url(./images/img-story-3.png);
+  justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   font-weight: bold;
   font-size: 30px;
   color: white;
@@ -145,10 +158,10 @@ body {
 
 /*edit this - currently not working + rename */
 .jordan {
-  display:flex;
-  overflow: scroll;
-  flex-direction: column;
-  flex-wrap:wrap;
+  display:inline-flex;
+  flex-direction: row;
+  min-width: 100%;
+  flex-wrap:nowrap;
   background-color: gold;
 }
 
